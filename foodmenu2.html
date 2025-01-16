@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menu</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+       
+        .menu-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .menu-tabs label {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid rgb(253, 247, 247);
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.967); /* Transparence */
+            color: rgb(6, 6, 6);
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: rgb(12, 12, 12);
+            color: rgb(240, 9, 9);
+        }
+
+        
+        .menu-section {
+            display: none;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 300px;
+            max-height: 500px;
+            background-color: rgba(4, 4, 4, 0.895); /* Transparence */
+            padding: 20px;
+            border-radius: 5px;
+
+        }
+        .menu-section h2 {
+            color: red;
+        }
+
+        input[type="radio"]:checked + label + .menu-section {
+            display: block;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .menu-item img {
+            margin-right: 10px;
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .menu-item div {
+            text-align: left;
+            
+        }
+        
+    </style>
+</head>
+<body background="C:\Users\21629\Desktop\587f98522ee56f25fa0f5b4e933e5707.jpg" style="background-repeat: no-repeat;background-size: cover; background-position: center;">
+    <div class="container">
+        <!-- Onglets pour les catégories -->
+        <div class="menu-tabs">
+            <input type="radio" id="started-tab" name="menu-tab" checked>
+            <label for="started-tab">The Starter</label>
+            <div class="menu-section">
+                <h2>The Starter</h2>
+                <div class="menu-item">
+                    <img src= "C:\Users\21629\Downloads\SALADE GRILLé - SLATA MECHWIA.jpg"alt="Salade Mechwiya">
+                    <div>
+                        <h3>Salade Mechwiya</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\BRIK SWEBAA FATMA - SPÉCIALISTE TUNISIENNE.jpg"alt="Brik">
+                    <div>
+                        <h3>Brik</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Salade tunisienne.jpg" alt="Salade verte">
+                    <h3>Salade verte</h3>
+                </div>
+            </div>
+
+            <input type="radio" id="main-tab" name="menu-tab">
+            <label for="main-tab">The Main Course</label>
+            <div class="menu-section">
+                <h2>Main Course</h2>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Market Jelbana tunisienne - La Cuisine De Shahrazed.jpg" alt="Jelbena">
+                    <h3>Jelbena</h3>
+                </div>
+                <div class="menu-item">
+                    <img src=C:\Users\21629\Downloads\Soupe aux haricots blancs (Loubia à la viande).jpg alt="Loubiya">
+                    <h3>Loubia</h3>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\kosksi.jpg" alt="Couscous">
+                    <div>
+                        <h3>Couscous</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Mlewi_ The Most Popular Tunisian Flatbread — Carthage Magazine.jpg" alt="Mlaoui">
+                    <div>
+                        <h3>Mlaoui</h3>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Pain tabouna au four.jpg" alt="Khobez tabouna ">
+                    <div>
+                        <h3>Khobez tabouna</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Fricassés tunisiens - Beignets salés garnis - Makla - La cuisine authentique.jpg" alt="Fricassé ">
+                    <div>
+                        <h3>Fricassé</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Recette tunisienne  ١٠٠%.jpg" alt="ijja merguez ">
+                    <div>
+                        <h3>Ijja merguez</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Makarouna bel salsa, pâtes tunisienne.jpg"alt="Makarouna ">
+                    <div>
+                        <h3>Makarouna</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\tajine 🇹🇳.jpg"alt="tajin ">
+                    <div>
+                        <h3>Tajin</h3>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\43815bf7-f2bb-4a2b-9eea-9585087943a2.jpg"alt="Mloukhiya ">
+                    <div>
+                        <h3>Mloukhiya</h3>
+                </div>
+
+            </div>
+
+            <input type="radio" id="dessert-tab" name="menu-tab">
+            <label for="dessert-tab">The Dessert</label>
+            <div class="menu-section">
+                <h2>The Dessert</h2>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\#KoolTounsi #Ma9roudh #Cuisine #Tunisie.jpg" alt="Makroudh">
+                    <div>
+                        <h3>Makroudh</h3>
+                        <p>Filled with dates, fried dough</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\tunisian dessert 🇹🇳_ Kaak el warka.jpg" alt="Kaek Warka">
+                    <div>
+                        <h3>Kaek Warka</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Homemade Pineapple Meyer Lemonade.jpg" alt="Citonade">
+                    <div>
+                        <h3>Citonade</h3>
+                        <p>Lemonade, refreshing</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\Café ~ #LadyLuxuryDesigns.jpg"alt="Kahwa Arbi">
+                    <div>
+                        <h3>Kahwa Arbi</h3>
+                        <p>Traditional Arabic coffee</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="C:\Users\21629\Downloads\68b885b6-9a8f-49a2-a1fd-dd2520448f63.jpg" alt="Baklewa">
+                    <div>
+                        <h3>Baklewa</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

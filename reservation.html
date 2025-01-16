@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: red;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: rgb(252, 247, 247);
+}
+
+
+.reservation-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.reservation-container {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #fdfdfd;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.reservation-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.reservation-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input, .form-group select, textarea {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #e90b0b;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0e0d0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #e65a00;
+}
+.button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #f10707;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #e03e00;
+        }
+
+        .image-list {
+            display: none; 
+            margin-top: 20px;
+        }
+
+        
+        .image-list:target {
+            display: block;
+        }
+
+        .image-list img {
+            width: 50px;
+            height: 50;
+            margin: 10px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3)
+        }
+        .menu-food select{
+     text-emphasis-color:;                                                                                     
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #f6eded;
+    border-radius: 5px;
+    background-color: #f10404;
+            
+        }
+
+</style>
+<html lang="en">
+<head>
+   
+    <title>Réservation</title>
+</head>
+    
+<html lang="en">
+<head backround="C:\Users\21629\Desktop\587f98522ee56f25fa0f5b4e933e5707.jpg">
+    <title>FOOD Menu- MiMa Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+    
+        <h1>Book a Online Table</h1>
+        <h1>Reservation Choose Your Table</h1>
+
+    </header>
+
+    <main class="reservation-section">
+        <div class="reservation-container">
+            <div class="reservation-image">
+                <img src= "C:\Users\21629\Desktop\587f98522ee56f25fa0f5b4e933e5707.jpg"alt="Table Setting">
+            </div>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name*" required>
+                    <input type="email" placeholder="Your Email*" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="time" placeholder="Enter Time" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Table Size</option>
+                        <option value="2">2 People</option>
+                        <option value="4">4 People</option>
+                        <option value="6">6 People</option>
+                    </select>
+                    <input type="date" required>
+                </div>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit" class="btn">book a table</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
